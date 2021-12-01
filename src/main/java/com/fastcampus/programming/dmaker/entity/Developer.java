@@ -1,5 +1,6 @@
 package com.fastcampus.programming.dmaker.entity;
 
+import com.fastcampus.programming.dmaker.code.StatusCode;
 import com.fastcampus.programming.dmaker.type.DeveloperLevel;
 import com.fastcampus.programming.dmaker.type.DeveloperSkillType;
 import lombok.*;
@@ -28,6 +29,9 @@ public class Developer {
 
     @ Enumerated
     private DeveloperSkillType developerSkillType;
+
+    @Enumerated
+    private StatusCode statusCode;
 
     private Integer experienceYears;
     private String memberId;
